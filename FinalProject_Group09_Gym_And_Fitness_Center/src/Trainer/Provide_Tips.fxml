@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Trainer.Provide_TipsController">
+   <top>
+      <AnchorPane prefHeight="60.0" prefWidth="803.0" style="-fx-background-color: #346154;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="341.0" layoutY="16.0" text="Workout Tips" textFill="#cde1ca">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="350.0" prefWidth="483.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="28.0" layoutY="20.0" prefHeight="18.0" prefWidth="162.0" text="Workout Tips">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="workoutTipsTableView" layoutX="28.0" layoutY="40.0" prefHeight="358.0" prefWidth="341.0">
+               <columns>
+                  <TableColumn prefWidth="104.00000762939453" text="Number" />
+                  <TableColumn prefWidth="236.79998779296875" text="Tips" />
+               </columns>
+            </TableView>
+            <Button fx:id="ViewTipsButton" layoutX="93.0" layoutY="416.0" mnemonicParsing="false" onAction="#ViewITipsButtonOnClick" prefHeight="26.0" prefWidth="194.0" text="View Workout Tips" textAlignment="CENTER" wrapText="true" />
+            <Line endX="52.999969482421875" endY="431.5999755859375" layoutX="352.0" layoutY="19.0" startX="45.800018310546875" startY="0.3999786376953125" />
+            <TextArea fx:id="AddIdeaTextField" layoutX="438.0" layoutY="175.0" prefHeight="160.0" prefWidth="314.0" />
+            <Label layoutX="438.0" layoutY="142.0" prefHeight="18.0" prefWidth="162.0" text="Add Tips:">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="432.0" layoutY="64.0" prefHeight="18.0" prefWidth="162.0" text="Number:">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NumTextField" layoutX="432.0" layoutY="91.0" />
+            <Button fx:id="AddItipsButton" layoutX="503.0" layoutY="347.0" mnemonicParsing="false" onAction="#AddITipsButtonOnClick" prefHeight="18.0" prefWidth="194.0" text="Add Tips" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="DashboardButton" layoutX="658.0" layoutY="429.0" mnemonicParsing="false" onAction="#BacktoDashboardButtonOnClick" text="Back to Dashboard" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

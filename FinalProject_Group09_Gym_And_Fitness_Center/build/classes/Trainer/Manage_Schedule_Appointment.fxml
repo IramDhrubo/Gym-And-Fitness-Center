@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Trainer.Manage_Schedule_AppointmentController">
+   <top>
+      <AnchorPane prefHeight="60.0" prefWidth="803.0" style="-fx-background-color: #346154;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="300.0" layoutY="16.0" text="Appointment Calendar" textFill="#cde1ca">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="350.0" prefWidth="483.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="31.0" layoutY="92.0" text="Appointment Date:" />
+            <DatePicker fx:id="AppointmentDatePicker" layoutX="152.0" layoutY="87.0" prefHeight="26.0" prefWidth="150.0" />
+            <Label layoutX="29.0" layoutY="126.0" text="Appointment Time: " underline="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="161.0" text="Starting Time: " />
+            <TextField fx:id="StartTimeTextField" layoutX="121.0" layoutY="156.0" prefHeight="26.0" prefWidth="150.0" />
+            <Label layoutX="33.0" layoutY="196.0" text="Ending Time: " />
+            <TextField fx:id="EndTimeTextField" layoutX="121.0" layoutY="192.0" />
+            <ComboBox fx:id="memListCombbox" layoutX="29.0" layoutY="18.0" prefHeight="41.0" prefWidth="150.0" promptText="         Members List" />
+            <Label layoutX="241.0" layoutY="30.0" text="Name" />
+            <TextField fx:id="memNameTextField" layoutX="299.0" layoutY="26.0" />
+            <Label layoutX="506.0" layoutY="30.0" text="Member ID" />
+            <TextField fx:id="memIDTextField" layoutX="577.0" layoutY="26.0" />
+            <Label layoutX="33.0" layoutY="250.0" text="Note:" />
+            <TextArea fx:id="NoteTextArea" layoutX="33.0" layoutY="274.0" prefHeight="123.0" prefWidth="728.0" />
+            <Button fx:id="SaveNoteButton" layoutX="48.0" layoutY="419.0" mnemonicParsing="false" onAction="#SaveNoteuttonOnClick" prefHeight="26.0" prefWidth="88.0" text="Save" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="BcktoDashboardButton" layoutX="645.0" layoutY="419.0" mnemonicParsing="false" onAction="#BcktoDashboardButtonOnclick" text="Back to Dashboard" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

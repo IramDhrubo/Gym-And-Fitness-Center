@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Receptionist.DashboardController">
+   <children>
+      <Text layoutX="32.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" />
+      <Text layoutX="271.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" />
+      <Button layoutX="22.0" layoutY="75.0" mnemonicParsing="false" onAction="#memberdEtailsButtonOnClick" prefHeight="38.0" prefWidth="151.0" text="Member Details" />
+      <Button layoutX="22.0" layoutY="113.0" mnemonicParsing="false" onAction="#scheduleButtonOnClick" prefHeight="38.0" prefWidth="151.0" text="Schedule" />
+      <Button layoutX="22.0" layoutY="151.0" mnemonicParsing="false" onAction="#transactionButtonOnClick" prefHeight="38.0" prefWidth="151.0" text="Transaction" />
+      <Button layoutX="22.0" layoutY="189.0" mnemonicParsing="false" onAction="#inventoryButtonOnClick" prefHeight="38.0" prefWidth="151.0" text="Inventory" />
+      <Button layoutX="22.0" layoutY="227.0" mnemonicParsing="false" onAction="#supportButtonOnClick" prefHeight="38.0" prefWidth="151.0" text="Support" />
+      <Button layoutX="22.0" layoutY="265.0" mnemonicParsing="false" onAction="#mailButtonOnClick" prefHeight="38.0" prefWidth="151.0" text="Mail" />
+      <Button layoutX="22.0" layoutY="303.0" mnemonicParsing="false" onAction="#querybBoxButtonOnClick" prefHeight="38.0" prefWidth="151.0" text="Query-Box" />
+      <Button layoutX="501.0" layoutY="322.0" mnemonicParsing="false" onAction="#logoutButtonOnClick" text="Logout" />
+      <TextArea fx:id="credTextArea" layoutX="416.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="336.0" layoutY="246.0" mnemonicParsing="false" onAction="#showButtonOnClick" text="Show" />
+      <TextField fx:id="enterIDTextField" layoutX="210.0" layoutY="82.0" promptText="enter ID" />
+      <TextField fx:id="nameTextField" layoutX="210.0" layoutY="119.0" promptText="Enter Name" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nutritionist.Track_members__Food_intakeController">
+   <top>
+      <AnchorPane prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #346154;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="361.0" layoutY="16.0" text="Intaken Food" textFill="#cde1ca">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="memberIDTextField" layoutX="125.0" layoutY="50.0" promptText=" Ex: 2005" />
+            <Label layoutX="23.0" layoutY="52.0" prefHeight="21.0" prefWidth="89.0" text="Member ID:" />
+            <TableView fx:id="WorkoutRoutineTableview" layoutX="29.0" layoutY="156.0" prefHeight="202.0" prefWidth="730.0">
+               <columns>
+                  <TableColumn fx:id="dateColumn" prefWidth="203.20001220703125" text="Date" />
+                  <TableColumn fx:id="foodColumn" prefWidth="223.20001220703125" text="For" />
+                  <TableColumn fx:id="foodColumn" prefWidth="303.99993896484375" text="Fook Taken" />
+               </columns>
+            </TableView>
+            <Button layoutX="35.0" layoutY="102.0" mnemonicParsing="false" onAction="#ViewFoodTakenButtonOnClick" prefHeight="38.0" prefWidth="154.0" text="View  routine" wrapText="true" />
+            <Button fx:id="DashboardButton" layoutX="619.0" layoutY="383.0" mnemonicParsing="false" onAction="#BacktoDashboardButtonOnClick" text="Back to Dashboard" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>

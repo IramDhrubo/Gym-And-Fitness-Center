@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="803.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginSceneController">
+   <children>
+      <AnchorPane layoutX="374.0" layoutY="24.0" prefHeight="482.0" prefWidth="404.0" style="-fx-background-color: #346154;">
+         <children>
+            <Label layoutX="168.0" layoutY="62.0" text="Login" textFill="#d4d4d4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userIDTextField" layoutX="92.0" layoutY="139.0" prefHeight="26.0" prefWidth="221.0" promptText="User ID" style="-fx-background-color: Transparent; -fx-border-color: #d4d4d4;">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="UserEmailTextField" layoutX="90.0" layoutY="179.0" prefHeight="26.0" prefWidth="222.0" promptText="User Email" style="-fx-background-color: Transparent; -fx-border-color: #d4d4d4;">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="passwordTextField" layoutX="92.0" layoutY="217.0" prefHeight="26.0" prefWidth="222.0" promptText="Password" style="-fx-background-color: Transparent; -fx-border-color: #d4d4d4;">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <Button fx:id="loginButton" layoutX="164.0" layoutY="305.0" mnemonicParsing="false" onAction="#LoginButtonOnClick" prefHeight="27.0" prefWidth="71.0" text="Login" textFill="#000000a7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="forgetpassButton" layoutX="134.0" layoutY="367.0" mnemonicParsing="false" onAction="#forgetpassButtonOnClick" prefHeight="2.0" prefWidth="138.0" style="-fx-background-color: transparent;" text="Forget Password" textFill="#d4d4d4a3" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="userTypeCombbox" layoutX="92.0" layoutY="256.0" opacity="0.76" prefHeight="26.0" prefWidth="222.0" promptText="User Type" visibleRowCount="8" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="74.0" layoutY="142.0" prefHeight="246.0" prefWidth="231.0" text="Welcome to OOG Gym and Fitness Center" textAlignment="CENTER" textFill="#050505" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

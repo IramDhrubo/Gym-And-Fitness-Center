@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Member.SetFitnessMilestonesController">
+   <children>
+      <Line endX="492.5999755859375" endY="-1.1444091796875E-5" layoutX="101.0" layoutY="62.0" startX="-100.0" />
+      <Label layoutX="227.0" layoutY="26.0" text="Set Fitness Milestone">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="88.0" text="Set Fitness Milestones:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="116.0" text="Type of Milestones">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="57.0" layoutY="145.0" mnemonicParsing="false" text="Do 10 pull ups in a row" />
+      <CheckBox layoutX="57.0" layoutY="174.0" mnemonicParsing="false" text="Do 20 chin ups in a row" />
+      <CheckBox layoutX="57.0" layoutY="200.0" mnemonicParsing="false" text="Run a mile in under 6 minutes" />
+      <CheckBox layoutX="57.0" layoutY="229.0" mnemonicParsing="false" text="Run a full marathon" />
+      <CheckBox layoutX="57.0" layoutY="256.0" mnemonicParsing="false" text="Complete a 30-day yoga challenge" />
+      <Button layoutX="148.0" layoutY="301.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="80.0" text="Set Milestones" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="423.0" layoutY="345.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" prefHeight="26.0" prefWidth="159.0" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

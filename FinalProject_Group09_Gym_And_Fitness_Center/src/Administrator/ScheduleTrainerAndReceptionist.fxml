@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrator.ScheduleTrainerAndReceptionistController">
+   <children>
+      <Label layoutX="202.0" layoutY="39.0" text="Schedule Trainer and Receptionist">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="95.0" text="Set Schedule:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="150.0" text="Select type to set Schedule to:" />
+      <Label layoutX="65.0" layoutY="196.0" text="Select person:" />
+      <DatePicker fx:id="selectDateForScheduleDatePicker" layoutX="275.0" layoutY="237.0" />
+      <Label layoutX="65.0" layoutY="241.0" text="Select Date:" />
+      <ComboBox fx:id="selectPersonToSetScheduleComboBox" layoutX="275.0" layoutY="192.0" prefWidth="150.0" />
+      <ComboBox fx:id="selectTypeToSetScheduleComboBox" layoutX="275.0" layoutY="146.0" prefWidth="150.0" />
+      <ComboBox fx:id="selectTimeForScheduleComboBox" layoutX="277.0" layoutY="289.0" prefWidth="150.0" />
+      <Label layoutX="64.0" layoutY="293.0" text="Select Time:" />
+      <Button layoutX="306.0" layoutY="337.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="92.0" text="Confirm" />
+      <Button layoutX="463.0" layoutY="434.0" mnemonicParsing="false" onAction="#backToAdministratorDashboardButtonOnClick" prefHeight="26.0" prefWidth="199.0" text="Back To Dashboard" wrapText="true" />
+   </children>
+</AnchorPane>

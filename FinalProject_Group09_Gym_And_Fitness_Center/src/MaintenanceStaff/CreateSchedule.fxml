@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MaintenanceStaff.CreateScheduleController">
+   <children>
+      <Line endX="489.4000244140625" endY="-1.52587890625E-5" layoutX="109.0" layoutY="67.0" startX="-106.60000610351562" startY="-1.52587890625E-5" />
+      <Label layoutX="236.0" layoutY="29.0" text="Create a Schedule">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="96.0" text="Create a Schedule:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="135.0" text="Schedule To:" />
+      <Label layoutX="67.0" layoutY="172.0" text="Name and ID:" />
+      <Label layoutX="67.0" layoutY="214.0" text="Select a Date:" />
+      <Label layoutX="67.0" layoutY="255.0" text="Select a Time:" />
+      <ComboBox fx:id="scheduleToComboBox" layoutX="189.0" layoutY="131.0" prefHeight="26.0" prefWidth="175.0" />
+      <TextField fx:id="nameAndIdTextField" layoutX="190.0" layoutY="168.0" prefHeight="26.0" prefWidth="175.0" />
+      <DatePicker fx:id="dateForScheduleDatePicker" layoutX="190.0" layoutY="210.0" prefHeight="26.0" prefWidth="200.0" />
+      <ComboBox fx:id="timeForScheduleDatePicker" layoutX="189.0" layoutY="251.0" prefHeight="26.0" prefWidth="175.0" />
+      <Button layoutX="236.0" layoutY="304.0" mnemonicParsing="false" onAction="#submitScheduleButtonOnClick" prefHeight="32.0" prefWidth="68.0" text="Submit" />
+      <Button layoutX="443.0" layoutY="359.0" mnemonicParsing="false" onAction="#backToDashboardButtonOnClick" prefHeight="26.0" prefWidth="132.0" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

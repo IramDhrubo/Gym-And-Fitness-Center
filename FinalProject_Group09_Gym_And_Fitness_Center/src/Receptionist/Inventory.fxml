@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Receptionist.InventoryController">
+   <children>
+      <Text layoutX="258.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory" />
+      <Button layoutX="470.0" layoutY="341.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" text="Back to Dashboard" />
+      <VBox layoutX="21.0" layoutY="65.0" prefHeight="266.0" prefWidth="558.0">
+         <children>
+            <Label fx:id="inventoryListLabel" text="Inventory List " />
+            <Button mnemonicParsing="false" onAction="#selectInventoryButtonOnClick" text="Select Inventory" />
+            <ListView fx:id="listView" prefHeight="200.0" prefWidth="340.0" />
+            <TextArea fx:id="listTextArea" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

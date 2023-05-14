@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sales_Representative.MembershipOptionsController">
+   <children>
+      <Text layoutX="244.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membership Options" />
+      <Button layoutX="472.0" layoutY="335.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

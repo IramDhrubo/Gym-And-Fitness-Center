@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrator.AddUserController">
+   <children>
+      <Label layoutX="105.0" layoutY="80.0" text="Add New User Details:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="131.0" text="Name:" />
+      <Label layoutX="113.0" layoutY="165.0" text="Gender:" />
+      <Label layoutX="113.0" layoutY="196.0" text="Address:" />
+      <Label layoutX="113.0" layoutY="235.0" text="Type of User:" />
+      <Label layoutX="114.0" layoutY="274.0" text="Unique ID:" />
+      <Label layoutX="112.0" layoutY="307.0" text="Password:" />
+      <PasswordField fx:id="passwordField" layoutX="244.0" layoutY="303.0" promptText="Enter Password" />
+      <TextField fx:id="uniqueIdTextField" layoutX="244.0" layoutY="270.0" promptText="Enter Unique ID" />
+      <TextField fx:id="addressTextField" layoutX="243.0" layoutY="192.0" prefHeight="26.0" prefWidth="297.0" promptText="Enter Address" />
+      <TextField fx:id="nameTextField" layoutX="244.0" layoutY="127.0" promptText="Enter Name" />
+      <RadioButton fx:id="maleRadioButton" layoutX="242.0" layoutY="165.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="femaleRadioButton" layoutX="317.0" layoutY="165.0" mnemonicParsing="false" text="Female" />
+      <ComboBox fx:id="userTypeComboBox" layoutX="244.0" layoutY="231.0" onAction="#userTypeOnClick" prefHeight="26.0" prefWidth="182.0" />
+      <Button layoutX="295.0" layoutY="365.0" mnemonicParsing="false" onAction="#addNewMemberOnApplyButtonClick" prefHeight="42.0" prefWidth="79.0" text="Apply" />
+      <Button layoutX="419.0" layoutY="429.0" mnemonicParsing="false" onAction="#backToAdministratorDashboardButtonOnClick" prefHeight="26.0" prefWidth="244.0" text="Back To User Information" wrapText="true" />
+      <Label layoutX="237.0" layoutY="29.0" text="Add A New User">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="workingHourTextField" layoutX="528.0" layoutY="258.0" visible="false" />
+      <Label fx:id="workingHourLabel" layoutX="442.0" layoutY="262.0" text="Working Hour:" visible="false" />
+      <Label fx:id="heightLabel" layoutX="442.0" layoutY="262.0" text="Height" visible="false" />
+      <TextField fx:id="heightTextField" layoutX="528.0" layoutY="258.0" visible="false" />
+      <Label fx:id="ageLabel" layoutX="441.0" layoutY="298.0" text="Age" visible="false" />
+      <Label fx:id="weightLabel" layoutX="443.0" layoutY="330.0" text="Weight" visible="false" />
+      <TextField fx:id="ageTextField" layoutX="529.0" layoutY="291.0" visible="false" />
+      <TextField fx:id="weightTextField" layoutX="529.0" layoutY="326.0" visible="false" />
+      <TextField fx:id="memberGoalTextField" layoutX="517.0" layoutY="127.0" prefHeight="26.0" prefWidth="174.0" visible="false" />
+      <Label fx:id="memberGoalLabel" layoutX="419.0" layoutY="131.0" text="Goal of Member:" visible="false" />
+   </children>
+</AnchorPane>

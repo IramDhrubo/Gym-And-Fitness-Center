@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sales_Representative.DevelopmentPlanController">
+   <children>
+      <Text layoutX="252.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Development Plan" />
+      <Button layoutX="108.0" layoutY="88.0" mnemonicParsing="false" onAction="#generatePdfbuttonOnClick" prefHeight="51.0" prefWidth="194.0" text="Ask File Name and Generate Pdf" />
+      <Button layoutX="452.0" layoutY="327.0" mnemonicParsing="false" onAction="#backToDashboardOnclick" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

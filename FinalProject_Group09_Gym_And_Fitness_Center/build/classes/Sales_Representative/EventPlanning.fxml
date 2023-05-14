@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sales_Representative.EventPlanningController">
+   <children>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="90.0" prefHeight="200.0" prefWidth="568.0" />
+      <Text layoutX="261.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Planning" />
+      <Button layoutX="466.0" layoutY="342.0" mnemonicParsing="false" onAction="#backToDashboadOnClick" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

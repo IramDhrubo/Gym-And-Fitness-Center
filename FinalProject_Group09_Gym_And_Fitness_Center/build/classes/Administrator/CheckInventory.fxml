@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrator.CheckInventoryController">
+   <children>
+      <Label layoutX="236.0" layoutY="15.0" text="Check Inventory">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="51.0" text="Check Inventory Details:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="80.0" text="Add A New Item:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="110.0" text="Item Name:" />
+      <Label layoutX="357.0" layoutY="110.0" text="Item Quantity:" />
+      <TextField fx:id="itemNameTextField" layoutX="122.0" layoutY="106.0" promptText="Add Item Name" />
+      <TextField fx:id="addItemQuantityTextField" layoutX="458.0" layoutY="106.0" promptText="Add Item Quantity" />
+      <Label layoutX="40.0" layoutY="191.0" text="Update an Item Quantity:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="223.0" text="Item Name:" />
+      <Label layoutX="357.0" layoutY="223.0" text="Item Quantity:" />
+      <TextField fx:id="updateItemQuantityTextField" layoutX="458.0" layoutY="219.0" promptText="Update Item Quantity" />
+      <ComboBox fx:id="selectItemNameToUpdateComboBox" layoutX="122.0" layoutY="219.0" prefWidth="150.0" />
+      <Label layoutX="40.0" layoutY="315.0" text="Check Item Availability:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="347.0" text="Item Name:" />
+      <TextField layoutX="369.0" layoutY="342.0" prefHeight="26.0" prefWidth="278.0" promptText="Item Quantity available in Inventory:" />
+      <ComboBox fx:id="selectItemNameToSearchComboBox" layoutX="161.0" layoutY="342.0" prefWidth="150.0" />
+      <Button layoutX="188.0" layoutY="258.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="310.0" text="Select Item Name and Quantity and UPDATE" wrapText="true" />
+      <Button layoutX="188.0" layoutY="145.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="310.0" text="Select Item Name and Quantity and ADD" wrapText="true" />
+      <Button layoutX="479.0" layoutY="442.0" mnemonicParsing="false" onAction="#backToAdministratorDashboardButtonOnClick" prefHeight="26.0" prefWidth="184.0" text="Back To Dashboard" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="161.0" layoutY="393.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="184.0" text="Select Item name and Search" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

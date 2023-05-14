@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrator.EditExistingUserController">
+   <children>
+      <Label layoutX="269.0" layoutY="30.0" text="Edit User Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="70.0" text="Edit a User Details:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="108.0" text="Type of User:" />
+      <Label layoutX="73.0" layoutY="148.0" text="Name and ID:" />
+      <ComboBox fx:id="typeOfUserComboBox" layoutX="191.0" layoutY="104.0" prefHeight="26.0" prefWidth="162.0" />
+      <ComboBox fx:id="nameAndIDComboBox" layoutX="191.0" layoutY="144.0" prefHeight="26.0" prefWidth="225.0" />
+      <Label layoutX="73.0" layoutY="202.0" text="Changes Needed To be Made:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="254.0" text="Type of User:" />
+      <Label layoutX="349.0" layoutY="254.0" text="Gender:" />
+      <ComboBox fx:id="updateTypeOfUserComboBox" layoutX="176.0" layoutY="250.0" prefWidth="150.0" />
+      <ComboBox fx:id="updateGenderComboBox" layoutX="443.0" layoutY="250.0" prefWidth="150.0" />
+      <TextField fx:id="updateAddressTextField" layoutX="177.0" layoutY="326.0" prefHeight="26.0" prefWidth="304.0" promptText="Enter Updated Address" />
+      <Label layoutX="73.0" layoutY="326.0" text="Address:" />
+      <Button layoutX="281.0" layoutY="374.0" mnemonicParsing="false" onAction="#updateUserDetailsOnClick" prefHeight="47.0" prefWidth="86.0" text="Update" />
+      <Button layoutX="434.0" layoutY="441.0" mnemonicParsing="false" onAction="#backToAdministratorDashboardButtonOnClick" prefHeight="27.0" prefWidth="226.0" text="Back To User Information" wrapText="true" />
+      <Label layoutX="73.0" layoutY="292.0" text="Name:" />
+      <TextField fx:id="updateNameComboBox" layoutX="177.0" layoutY="288.0" prefHeight="26.0" prefWidth="226.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Member.WorkoutPlansController">
+   <children>
+      <Line endX="544.9999389648438" endY="8.800003051757812" layoutX="107.0" layoutY="60.0" startX="-100.0" />
+      <Label layoutX="285.0" layoutY="25.0" text="Workout Plans and Tips">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="73.0" text="Workout Plans, Diet plans and some Wellness Tips:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="27.0" layoutY="103.0" prefHeight="259.0" prefWidth="226.0" text="Workout Plan:&#10;1. Start with a warm-up: Begin your workout with a five to ten-minute warm-up. This could include jogging on the spot, jumping jacks, or stretching.&#10;2. Incorporate strength training:This could include bodyweight exercises such as push-ups, squats, and lunges, or using weights at a gym.&#10;Include cardio: This could include running, cycling, swimming, or any other activity that gets your heart rate up.&#10;3. Cool down: This could include stretching or a low-intensity activity such as walking." wrapText="true" />
+      <TextArea layoutX="261.0" layoutY="103.0" prefHeight="259.0" prefWidth="226.0" text="Wellness Tips:&#10;1. Get enough sleep: Aim for seven to eight hours of sleep each night to help promote overall wellness.&#10;2. Manage stress:Practice stress-management techniques such as meditation, deep breathing, or yoga.&#10;3. Stay connected:Build and maintain social connections with friends and family.&#10;4. Seek help if needed: If you're struggling with your physical or mental health, don't be afraid to seek help from a healthcare professional." wrapText="true" />
+      <TextArea layoutX="495.0" layoutY="103.0" prefHeight="247.0" prefWidth="164.0" text="Diet Plan:&#10;1. Eat a balanced diet:Include a variety of fruits, vegetables, whole grains, lean protein, and healthy fats in your diet.&#10;2. Control portion sizes:Use smaller plates, measure your portions, and avoid eating too quickly to help control portion sizes.&#10;3. Stay hydrated Drink plenty of water throughout the day to stay hydrated.&#10;4. Don't skip meals:Skipping meals can lead to overeating later on, so aim to eat regular meals and snacks throughout the day." wrapText="true" />
+      <Button layoutX="487.0" layoutY="362.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" prefHeight="26.0" prefWidth="146.0" text="Back to Dashboard" />
+   </children>
+</AnchorPane>
